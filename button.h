@@ -14,10 +14,10 @@ public:
     ~Button();
 
     uint8_t update();
-    uint8_t read();
+    uint8_t read(uint8_t do_read = 0);
 
 private:
-    uint8_t state;
+    uint16_t state;
     volatile uint8_t *PORT;
     uint16_t PIN;
 };
