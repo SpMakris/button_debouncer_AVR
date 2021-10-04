@@ -1,6 +1,4 @@
-#ifndef ARDUINO_H
-#define ARDUINO_H
-// #include <Arduino.h>
+#pragma once
 #include <stdint.h>
 #define B_TRIG 1
 #define B_HOLD 2
@@ -21,5 +19,3 @@ private:
     volatile uint8_t *PORT;
     uint16_t PIN;
 };
-
-#endif
